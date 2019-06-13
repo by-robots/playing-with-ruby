@@ -13,8 +13,10 @@ class CsvReader
   end
 
   # Calculates the total value of all of the books in stock.
-  def total_value_in_stock
-    #
+  def total_value_in_stock # TODO: Use inject to sum a collection
+    sum = 0.0
+    @books_in_stock.each {|book| sum += book.price}
+    sum
   end
 
   # Lists how many of each book are ins tock by their ISBN number.
