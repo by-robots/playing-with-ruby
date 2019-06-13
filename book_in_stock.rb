@@ -13,12 +13,18 @@ class BookInStock
   def to_s
     "ISBN: #{@isbn}; Price: #{@price}."
   end
+
+  # Get the book's price in pence
+  def price_in_pence
+    Integer(price*100 + 0.5)
+  end
 end
 
 # Create some instances and see what's inside.
 b1 = BookInStock.new('isbn1', 3)
 puts "Book 1's ISBN is #{b1.isbn}."
 puts "Book 1's price is #{b1.price}."
+puts "Book 1's price in pence is #{b1.price_in_pence}."
 
 b2 = BookInStock.new('isbn2', 3.13)
 puts "Book 2's ISBN is #{b2.isbn}."
@@ -30,4 +36,4 @@ puts "Book 3's price is #{b3.price}."
 
 # Apply a discount to Book 3 to test out writable attributes.
 b3.price = b3.price * 0.75
-puts "Book 3's discounted price is #{b3.price}."
+puts "Book 3's discounted price is #{b3.price}, which is #{b3.price_in_pence} pence."
