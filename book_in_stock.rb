@@ -10,14 +10,26 @@ class BookInStock
   def to_s
     "ISBN: #{@isbn}; Price: #{@price}."
   end
+
+  # Accessor methods.
+  def isbn
+    @isbn
+  end
+
+  def price
+    @price
+  end
 end
 
 # Create some instances and see what's inside.
 b1 = BookInStock.new('isbn1', 3)
-puts b1
+puts "Book 1's ISBN is #{b1.isbn}."
+puts "Book 1's price is #{b1.price}."
 
 b2 = BookInStock.new('isbn2', 3.13)
-puts b2
+puts "Book 2's ISBN is #{b2.isbn}."
+puts "Book 2's price is #{b2.price}."
 
 b3 = BookInStock.new('isbn3', '5.67')
-puts b3
+puts "Book 3's ISBN is #{b3.isbn}."
+puts "Book 3's price is #{b3.price}."
