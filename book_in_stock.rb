@@ -14,9 +14,14 @@ class BookInStock
     "ISBN: #{@isbn}; Price: #{@price}."
   end
 
-  # Get the book's price in pence
+  # Get the book's price in pence.
   def price_in_pence
     Integer(price*100 + 0.5)
+  end
+
+  # Allow the book's price to be set in pence.
+  def price_in_pence=(pence)
+    @price = pence / 100.0
   end
 end
 
@@ -29,6 +34,10 @@ puts "Book 1's price in pence is #{b1.price_in_pence}."
 b2 = BookInStock.new('isbn2', 3.13)
 puts "Book 2's ISBN is #{b2.isbn}."
 puts "Book 2's price is #{b2.price}."
+
+# Reset Book 2's price by supplying a number of pence.
+b2.price_in_pence = 450
+puts "Book 2's new price is #{b2.price}."
 
 b3 = BookInStock.new('isbn3', '5.67')
 puts "Book 3's ISBN is #{b3.isbn}."
