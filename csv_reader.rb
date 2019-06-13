@@ -1,3 +1,6 @@
+require 'csv'
+require_relative 'book_in_stock'
+
 # Works with CSV data.
 class CsvReader
   # Get the ball rolling.
