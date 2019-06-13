@@ -12,6 +12,11 @@ class BookInStock
   def to_s
     "ISBN: #{@isbn}; Price: #{@price}."
   end
+
+  # Define attribute setters.
+  def price=(new_price)
+    @price = new_price
+  end
 end
 
 # Create some instances and see what's inside.
@@ -26,3 +31,7 @@ puts "Book 2's price is #{b2.price}."
 b3 = BookInStock.new('isbn3', '5.67')
 puts "Book 3's ISBN is #{b3.isbn}."
 puts "Book 3's price is #{b3.price}."
+
+# Apply a discount to Book 3 to test out writable attributes.
+b3.price = b3.price * 0.75
+puts "Book 3's discounted price is #{b3.price}."
