@@ -1,6 +1,7 @@
 # Represents a book that's in stock in our pretend book shop.
 class BookInStock
-  attr_reader :isbn, :price
+  attr_reader :isbn
+  attr_accessor :price
 
   # Initialize a book.
   def initialize(isbn, price)
@@ -11,11 +12,6 @@ class BookInStock
   # Override to_s to output the contents of the class instance.
   def to_s
     "ISBN: #{@isbn}; Price: #{@price}."
-  end
-
-  # Define attribute setters.
-  def price=(new_price)
-    @price = new_price
   end
 end
 
