@@ -9,3 +9,4 @@ Adventures in Ruby land.
 3. [Command Line Arguments](https://github.com/by-robots/playing-with-ruby/tree/03-command-line-arguments)
 4. ["Book Shop"](https://github.com/by-robots/playing-with-ruby/tree/04-book-shop)
 5. [Method Visibility](https://github.com/by-robots/playing-with-ruby/tree/05-method-visibility)
+6. [Variables](https://github.com/by-robots/playing-with-ruby/tree/06-variables)
