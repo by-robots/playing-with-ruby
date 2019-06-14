@@ -9,6 +9,6 @@ class Account
   protected
 
   def greater_balance_than?(other)
-    @cleared_balanace > other.cleared_balanace
+    @cleared_balance > other.cleared_balanace
   end
 end
