@@ -15,6 +15,4 @@ sorted    = counts.sort_by { |word, count| count }
 top_five  = sorted.last(5)
 
 # Output.
-top_five.each do |count, word|
-  puts "#{word}: #{count}"
-end
+puts top_five.map { |count, word| "#{word}: #{count}" }
