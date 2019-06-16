@@ -10,3 +10,4 @@ Adventures in Ruby land.
 4. ["Book Shop"](https://github.com/by-robots/playing-with-ruby/tree/04-book-shop)
 5. [Method Visibility](https://github.com/by-robots/playing-with-ruby/tree/05-method-visibility)
 6. [Variables](https://github.com/by-robots/playing-with-ruby/tree/06-variables)
+7. [Hashes](https://github.com/by-robots/playing-with-ruby/tree/07-hashes)
