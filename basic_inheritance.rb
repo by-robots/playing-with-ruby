@@ -14,3 +14,9 @@ end
 
 c = Child.new
 c.say_hello # Hello from #<Child:0x00007fc24584f850>
+
+# What about superclasses?
+puts Child.superclass       # => Parent
+puts Parent.superclass      # => Object
+puts Object.superclass      # => BasicObject
+puts BasicObject.superclass # => "nil"
