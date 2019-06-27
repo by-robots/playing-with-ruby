@@ -13,3 +13,4 @@ Adventures in Ruby land.
 7. [Hashes](https://github.com/by-robots/playing-with-ruby/tree/07-hashes)
 8. [Enumerators](https://github.com/by-robots/playing-with-ruby/tree/08-enumerators)
 9. [Inheritance and Mixins](https://github.com/by-robots/playing-with-ruby/tree/09-inheritance-and-mixins)
+10. [Modules](https://github.com/by-robots/playing-with-ruby/tree/10-modules)
